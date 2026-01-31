@@ -1,0 +1,15 @@
+sounddevice
+numpy
+openai-whisper
+soundfile
+noisereduce
+scipy
+scipy
+torch
+rasa
+requests
+python-decouple
+uvicorn
+fastapi
+pydub
+ffmpeg

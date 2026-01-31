@@ -1,0 +1,47 @@
+version: "3.1"
+
+rules:
+  - rule: Consulter le solde
+    steps:
+      - intent: consulter_solde
+      - action: utter_consulter_solde
+
+  - rule: Effectuer un virement
+    steps:
+      - intent: effectuer_virement
+      - action: utter_effectuer_virement
+
+  - rule: Envoyer un message
+    steps:
+      - intent: envoyer_message
+      - action: utter_envoyer_message
+
+  - rule: Passer un appel
+    steps:
+      - intent: passer_appel
+      - action: utter_passer_appel
+
+  - rule: Demander des renseignements bancaires
+    steps:
+      - intent: demander_renseignements_bancaires
+      - action: utter_demander_renseignements_bancaires
+
+  - rule: Bloquer une carte
+    steps:
+      - intent: bloquer_carte
+      - action: utter_bloquer_carte
+
+  - rule: Bienvenu
+    steps:
+      - intent: bienvenu
+      - action: utter_bienvenu
+
+  - rule: Au revoir
+    steps:
+      - intent: aurevoir
+      - action: utter_aurevoir
+
+  - rule: Fallback rule
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default

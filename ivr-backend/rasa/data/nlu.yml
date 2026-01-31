@@ -1,0 +1,1067 @@
+version: "3.1"
+
+nlu:
+
+- intent: consulter_solde
+  examples: |
+    - Je veux consulter mon solde.
+    - Peux-tu me dire mon solde ?
+    - Montre-moi mon solde.
+    - Quel est le montant de mon solde ?
+    - Je voudrais vérifier mon solde.
+    - Peux-tu m'indiquer mon solde ?
+    - Je souhaite consulter mon solde bancaire.
+    - Montre-moi combien il me reste sur mon compte.
+    - Je veux savoir mon solde actuel.
+    - Quel est mon solde à l'heure actuelle ?
+    - Dis-moi combien j’ai sur mon solde.
+    - Peux-tu vérifier mon solde ?
+    - J’ai besoin de connaître mon solde.
+    - Vérifie mon solde pour moi.
+    - Combien j’ai sur mon compte ?
+    - Montre-moi l’état de mon solde.
+    - Quel est mon solde en ce moment ?
+    - Je veux voir mon solde bancaire.
+    - Vérifie mon solde tout de suite.
+    - Combien d'argent j'ai sur mon compte ?
+    - J'ai besoin de consulter mon solde de compte.
+    - Quel est le solde de mon compte ?
+    - Dis-moi où en est mon solde.
+    - Peux-tu me dire le solde de mon compte ?
+    - Je souhaite connaître mon solde de carte bancaire.
+    - Je veux savoir le montant de mon solde.
+    - Montre-moi l’état de mon compte.
+    - Je voudrais savoir combien il me reste sur mon compte.
+    - Vérifie combien il me reste sur mon solde.
+    - Quel est mon solde disponible ?
+    - Peux-tu m'indiquer combien j’ai sur mon solde ?
+    - Je voudrais savoir où en est mon compte.
+    - J’ai besoin de savoir combien il me reste.
+    - Peux-tu me dire si j’ai de l’argent sur mon compte ?
+    - Est-ce que tu peux vérifier combien il me reste ?
+    - Vérifie combien j’ai sur mon compte, je ne sais pas.
+    - J’ai l’impression que mon solde est bas, peux-tu vérifier ?
+    - Tu peux me donner une idée de mon solde ?
+    - J’ai un doute sur mon solde, peux-tu vérifier ?
+    - Je ne suis pas sûr du montant sur mon compte, aide-moi.
+    - Je veux savoir si mon compte est bien approvisionné.
+    - Dis-moi si j'ai suffisamment d’argent sur mon compte.
+    - J’ai un souci avec mon solde, tu peux m’aider ?
+    - Vérifie combien il me reste, s'il te plaît.
+    - Tu crois que j'ai assez sur mon compte ?
+    - Peux-tu me dire ce qu’il reste sur mon compte ?
+    - Je me demande combien j’ai sur mon solde.
+    - Est-ce que je peux voir mon solde maintenant ?
+    - Tu sais combien il me reste sur mon compte ?
+    - Tu peux me dire combien j’ai pour mes achats ?
+    - Vérifie mes fonds, je crois qu’il ne me reste pas beaucoup.
+    - Je ne suis pas sûr de mon solde, peux-tu vérifier ?
+    - Est-ce que tu peux me dire si mon compte est à jour ?
+    - Je veux savoir si j’ai encore des fonds.
+    - Je me demande si mon solde est suffisant pour ça.
+    - J’aimerais avoir une idée de ce qu’il me reste.
+    - Est-ce que je peux savoir combien j’ai sur mon compte ?
+    - Combien me reste-t-il sur mon compte ?
+    - Tu crois qu’il me reste de l’argent sur mon compte ?
+    - Tu sais si mon solde est positif ?
+    - Est-ce que j’ai de l’argent sur mon solde ?
+    - Je veux savoir mon slde.
+    - Peux tu me dire combien j’ai sur mon compte ?
+    - T’as combien sur ton compte, toi ?
+    - Je veux cnsulter mon solde.
+    - Combien j’ai sur mon slode ?
+    - Vérifie mon slode stp.
+    - J’ai besoin de savoir mon solde mais je sais pas où aller.
+    - Combien d’argent il me reste sur mon compte svp ?
+    - T’as pu voir combien j’ai sur mon compte ?
+    - C’est quoi le solde de mon compte ?
+    - Je veux connaitre mon sld svp.
+    - Je veux savoir ce qu’il me reste sur mon compte.
+    - Vérifie combien j’ai sur le compte.
+    - Combien j’ai encore sur mon compte, tu sais ?
+    - Combien j’ai encore sur mon slode ?
+    - Est-ce que tu peux vérifier ma balance ?
+    - C’est quoi mon slode actuel ?
+    - Dis-moi si je suis à découvert.
+    - Combien il me reste sur mon slode de compte ?
+    - Tu peux m’aidé avec mon compte, stp ?
+    - Je sais pas si mon solde est suffisant, regarde !
+    - Tu veux pas vérifier combien il me reste sur le solde ?
+    - Slt, tu peux me dire combien j’ai sur mon compte ?
+    - Dis-moi mon slode en cours.
+    - J’ai trop de mal avec mon solde, tu peux voir ?
+    - Est-ce que je suis à jour sur mon compte ?
+    - Dis-moi où j’en suis sur mon compte.
+    - Tu crois que j’ai assez d’argent sur mon compte ?
+    - Peux-tu voir combien j’ai sur mon solde, s’il te plaît ?
+    - Est-ce que tu peux vérifier mon slode ?
+    - Regarde si j’ai assez de sous sur mon compte.
+    - J’ai pas assez de sous, c’est quoi mon slode ?
+    - Combien de sous me reste-t-il ?
+    - Je veux savoir combien je peux dépenser, vérifie mon solde.
+   
+
+
+- intent: effectuer_virement
+  examples: |
+    - Je veux effectuer un virement.
+    - Peux-tu réaliser un virement pour moi ?
+    - Je dois faire un virement bancaire.
+    - Je voudrais envoyer de l'argent à quelqu'un.
+    - Fais-moi un virement de 100€.
+    - Je souhaite transférer des fonds sur un autre compte.
+    - Effectue un virement de 200€ pour moi.
+    - Peux-tu faire un virement vers mon autre compte ?
+    - Je voudrais envoyer de l'argent à [Jean](recipient).
+    - Transfère 50€ de mon compte à celui de [Pierre](recipient).
+    - Je veux faire un virement immédiat.
+    - Fais un virement de 1000€ à [Sophie](recipient).
+    - Je veux envoyer de l'argent à [Lucas](recipient) par virement.
+    - Effectue un virement de 150€ sur mon compte.
+    - Je veux virer de l'argent sur mon autre compte.
+    - Je veux transférer 500€ à [Marie](recipient).
+    - Tu peux envoyer 250€ à [Jacques](recipient) ?
+    - Fais un virement de 100€ à mon compte.
+    - Je souhaite faire un virement en urgence.
+    - Peux-tu m’aider à effectuer un virement ?
+    - Je veux faire un virement entre mes comptes.
+    - Fais un virement de 300€ à [Alain](recipient).
+    - Je voudrais transférer 800€ à [Camille](recipient).
+    - Transfère de l'argent à [Elodie](recipient).
+    - Je veux envoyer 600€ à [Nicolas](recipient).
+    - Effectue un virement de 1000€ vers [David](recipient).
+    - Je souhaite faire un virement à [Sophie](recipient).
+    - Fais un virement de 50€ à [Claire](recipient).
+    - Peux-tu envoyer un virement de 75€ pour moi ?
+    - Je veux effectuer un virement international.
+    - Effectue un virement de 300€ à [Antoine](recipient).
+    - Transfère des fonds à [Valérie](recipient).
+    - Je dois faire un virement vers mon compte principal.
+    - Est-ce que tu peux transférer de l'argent pour moi ?
+    - J’ai besoin d’envoyer de l’argent, tu peux m’aider ?
+    - Je dois transférer de l’argent, mais je ne sais pas comment.
+    - Peux-tu faire un transfert entre mes comptes ?
+    - J’ai besoin de virer de l’argent à quelqu’un, tu peux le faire ?
+    - Tu crois que tu peux effectuer un virement pour moi ?
+    - J’aimerais faire un paiement, mais je préfère un virement.
+    - Est-ce que je peux envoyer de l'argent comme ça ?
+    - Je veux déplacer des fonds sur un autre compte.
+    - J’ai besoin de faire un transfert rapidement.
+    - Peux-tu faire un virement vers mon autre compte, stp ?
+    - Je voudrais envoyer un peu d'argent à quelqu’un.
+    - Est-ce possible de faire un virement maintenant ?
+    - J’aimerais virer un peu d’argent sur un autre compte.
+    - Je voudrais que tu envoies de l'argent à [Marie](recipient).
+    - Tu peux transférer 200€ à [Pierre](recipient) ?
+    - Est-ce que tu peux transférer de l'argent vers un autre compte ?
+    - Je veux déplacer des fonds, mais je ne sais pas comment faire.
+    - Peux-tu m’aider à envoyer de l’argent ?
+    - Je ne sais pas comment faire un virement, tu peux m’aider ?
+    - Tu peux me faire un virement si tu veux ?
+    - J’aimerais bien envoyer de l’argent à [Jacques](recipient), tu peux ?
+    - Est-ce que tu peux virer des fonds vers [Sophie](recipient) ?
+    - J’ai une urgence, tu peux m’aider à envoyer de l'argent ?
+    - Tu crois que je peux faire un virement maintenant ?
+    - Peux-tu transférer de l'argent vers mon compte principal ?
+    - Tu peux virer 100€ pour moi ?
+    - J’ai besoin de savoir comment faire un virement.
+    - Tu sais comment faire un virement ?
+    - Je veux envoyer 300€ à quelqu’un.
+    - Peux-tu m’aider à faire un virement ?
+    - Fait moi un virement de 200€.
+    - Je veux faire un virment de 50€.
+    - Transfère 100€ vers [Sophie](recipient).
+    - Fait un virement vers [lucas](recipient).
+    - Peux tu virer 100€ pour moi ?
+    - Tu peut transférer de l’argent pour moi ?
+    - Fais un virement de 150€ sur mon autre compte.
+    - J’ai besoin de faire un virment urgent.
+    - Je veux faire un virmement à [Alain](recipient).
+    - Fais un virement de 300€ à [lucas](recipient).
+    - Je veux virer des sous a [David](recipient).
+    - Envois moi un virements de 500€.
+    - Peux tu faire un virment vers [Camille](recipient) ?
+    - J’ai besoin de virer 200€ aujourd’hui.
+    - Fais un virements de 1000€ a [Jacques](recipient).
+    - Peux tu faire un transfert urgent ?
+    - Je veux faire un virment international.
+    - Fais un virement de 50 euros vers mon autre compte.
+    - Transfert 150€ à [Nicolas](recipient).
+    - Tu peux envoyer un virements de 200€ pour moi ?
+    - Je veux virer 100€ à [Marie](recipient).
+    - Je dois virer de l’argent sur mon compte principal.
+    - Tu veux faire un virements pour moi ?
+    - Est ce que tu peut virer 250€ ?
+    - Fais moi un virement rapidement.
+    - Tu peux envoyer un virment de 500€ ?
+    - Je veux faire un virement a mon autre compte.
+    - Transfère de l’argent à [Antoine](recipient).
+    - J’ai besoin de faire un virements tout de suite.
+    - Tu peux virer 100€ a [Claire](recipient) ?
+    - Envois moi un virment de 200€ svp.
+    - J’ai un probleme avec mon virment, tu peux m’aider ?
+    - Je veux transférer des fonds mais je ne sais pas comment faire.
+    - Je dois faire un virment maintenant.
+    - Peux-tu faire un virements vers [Valérie](recipient) ?
+    - J’ai urgent besoin de faire un virment.
+
+
+- intent: envoyer_message
+  examples: |
+    - Peux-tu envoyer un message à [Paul](recipient) ?
+    - Je veux transmettre un message à [ma mère](recipient).
+    - Envoie ceci à [mon collègue](recipient).
+    - Écris à [Marie](recipient) pour lui dire que je suis en retard.
+    - Passe un message à [mon professeur](recipient).
+    - Pourrais-tu écrire à [Léa](recipient) pour moi ?
+    - Envoie un SMS à [mon frère](recipient), s’il te plaît.
+    - Rédige un message pour [mon ami](recipient).
+    - Dis à [Lucas](recipient) que je serai en retard.
+    - Peux-tu dire à [Sophie](recipient) que tout va bien ?
+    - Contacte [Clara](recipient) et informe-la de mon arrivée.
+    - Message à [Monique](recipient) : "Je serai là à 15h."
+    - Écris un texto à [Louis](recipient).
+    - Transmets mon message à [l’équipe](recipient).
+    - Envoie un message urgent à [mon patron](recipient).
+    - Passe le mot à [Karine](recipient).
+    - Rédige ce SMS pour [Alice](recipient).
+    - Tu peux envoyer ça à [Marc](recipient) ?
+    - Écris ça à [Céline](recipient).
+    - Transmets ça à [Sarah](recipient).
+    - Faut envoyer ça à [mon cousin](recipient).
+    - Dis à [mon père](recipient) de m’appeler.
+    - Message pour [l’école](recipient) : "Je suis absent."
+    - Envoie ceci à [ma tante](recipient).
+    - Peux-tu transmettre ça à [Julie](recipient) ?
+    - Tu peux envoyer ce message à [Luc](recipient) ?
+    - Fais savoir à [Sam](recipient) que je suis là.
+    - Écris à [ma sœur](recipient) pour moi.
+    - Contacte [mon ami](recipient) et dis-lui que tout est OK.
+    - Rédige un texto à [ma femme](recipient).
+    - Informe [mes collègues](recipient) que je suis en retard.
+    - Message à [Damien](recipient) : "Je te rejoins bientôt."
+    - Note un message pour [Anna](recipient).
+    - Peux-tu dire à [Claire](recipient) que c’est réglé ?
+    - Envoie ça à [mon frère](recipient).
+    - Tu peux avertir [Julie](recipient) ?
+    - Fais passer le mot à [Marion](recipient).
+    - Informe [mon chef](recipient) que je ne viendrai pas.
+    - Préviens [mes amis](recipient) que je suis bloqué.
+    - Message à [maman](recipient) : "Je suis arrivé."
+    - Tu peux dire à [Thomas](recipient) que je suis prêt ?
+    - Envoie ça à [Pierre](recipient).
+    - Écris à [mon cousin](recipient) que je suis en route.
+    - Message à [Marc](recipient) : "Merci pour tout."
+    - Rédige ça pour [Sophie](recipient).
+    - Peux-tu écrire à [Jeanne](recipient) que tout va bien ?
+    - Transmets ce message à [Lucie](recipient).
+    - Envoie un SMS à [Hugo](recipient).
+    - Peux-tu écrire ceci à [ma tante](recipient) ?
+    - Fais savoir à [Jean](recipient) que c’est bon.
+    - Message pour [Sarah](recipient) : "À demain."
+    - Rédige un SMS pour [mon père](recipient).
+    - Envoie ce texte à [Max](recipient).
+    - Écris un message pour [mon collègue](recipient).
+    - Informe [Camille](recipient) que je suis prêt.
+    - Passe un message à [mon chef](recipient).
+    - Note ça pour [Karine](recipient).
+    - Envoie ça à [mon ami](recipient).
+    - Message pour [Julie](recipient) : "Je suis à l’aéroport."
+    - Préviens [ma mère](recipient) que j’arrive.
+    - Tu peux dire à [Marie](recipient) que j’ai tout reçu ?
+    - Envoie un texto à [Lola](recipient).
+    - Contacte [Mélanie](recipient) pour lui transmettre ça.
+    - Message à [Léa](recipient) : "On se retrouve demain."
+    - Écris à [Cécile](recipient) pour moi.
+    - Dis à [Alice](recipient) que j’ai fini.
+    - Envoie un message à [mes collègues](recipient).
+    - Passe le mot à [ma sœur](recipient).
+    - Contacte [mes amis](recipient) pour leur donner cette info.
+    - Écris à [Luc](recipient) que tout va bien.
+    - Message à [David](recipient) : "Tout est prêt."
+    - Envoie ce SMS à [mon père](recipient).
+    - Préviens [mon chef](recipient) que je suis en retard.
+    - Informe [Julien](recipient) que tout est OK.
+    - Rédige ce SMS pour [Clara](recipient).
+    - Transmets ça à [ma cousine](recipient).
+    - Dis à [ma femme](recipient) que je suis sur la route.
+    - Message pour [mon oncle](recipient) : "Je t’appelle plus tard."
+    - Tu peux envoyer un message à [Maxime](recipient) ?
+    - Passe ce message à [Hugo](recipient).
+    - Écris ça pour [ma sœur](recipient).
+    - Dis à [Lola](recipient) que c’est réglé.
+    - Envoie ceci à [mon collègue](recipient).
+    - Informe [mon chef](recipient) que je suis là.
+    - Préviens [l’équipe](recipient) que j’ai un imprévu.
+    - Tu peux rédiger ça pour [Léa](recipient) ?
+    - Dis à [Clara](recipient) que tout va bien.
+    - Écris à [ma tante](recipient) que j’arrive.
+    - Transmets ce message à [mes parents](recipient).
+    - Rédige un texto pour [ma femme](recipient).
+    - Message à [Thomas](recipient) : "Je suis au bureau."
+    - Écris à [ma cousine](recipient) pour moi.
+    - Peux-tu écrire ça à [ma mère](recipient) ?
+    - Préviens [Alice](recipient) que j’ai bien reçu ses documents.
+    - Envoie ce SMS à [Paul](recipient).
+    - Message pour [Sophie](recipient) : "Je t’appelle plus tard."
+    - Informe [Léa](recipient) que c’est annulé.
+    - Écris à [mes amis](recipient) que je suis absent.
+    - Passe le mot à [mes collègues](recipient).
+    - Rédige un message pour [ma tante](recipient).
+    - Préviens [Max](recipient) que tout est bon.
+    - Transmets ce message à [Marie](recipient).
+    - Envoie ce message à [quelqu'un](recipient).
+    - Est-ce que tu peux envoyer un message ?
+    - Tu peux transmettre ça à quelqu’un ?
+    - Je voudrais envoyer quelque chose, tu peux le faire ?
+    - Écris à cette personne de ma part.
+    - Tu pourrais le transmettre à ce type ?
+    - Rédige un message à ce nom.
+    - J’ai besoin que ce message parte à quelqu’un.
+    - Passe ça à un ami de ma part.
+    - Écris à un de mes contacts, merci.
+    - Tu veux m'aider à envoyer ce truc ?
+    - Tu peux envoyer un message ? Juste ça.
+    - Je veux que tu le dises à quelqu’un.
+    - Je ne sais pas à qui envoyer ce message.
+    - Envoie-le à un de mes amis.
+    - Fais passer ça à quelqu’un, peu importe qui.
+    - Transmets ce texte à un membre de la famille.
+    - Fais savoir ce truc à quelqu’un.
+    - Écris-le et envoie-le à quelqu’un de ma liste.
+    - Passe ce message à quelqu’un d’autre.
+    - Dis à un de mes collègues que je suis en retard.
+    - Fais-le envoyer à quelqu’un rapidement.
+    - Tu peux l’envoyer à un de mes proches ?
+    - Passe-le à un ami, ça suffit.
+    - J’ai besoin que ce message soit envoyé à un des deux.
+    - Tu peux envoyer ce message à cette personne, peu importe qui ?
+    - C’est urgent, envoie ce message à quelqu’un de disponible.
+    - Prends ce texte et fais-le envoyer à n'importe qui.
+    - Écris à cette personne pour moi.
+    - Est-ce que tu peux envoyer un message pour moi à quelqu’un ?
+    - Ce message doit aller à quelqu’un, mais qui ?
+    - Je veux juste envoyer un message, peu importe à qui.
+    - Envoie moé un msg à [Sophie](recipient).
+    - T'envoie ça à [Pierre](recipient) stp.
+    - Es-tu ok pour envoyer ce sms ?
+    - Tu peu envoyer ça a [Monique](recipient).
+    - Envois le à [Lucas](recipient) s’il te plait.
+    - Envoie ça à [Marc](recipient), je crois.
+    - Peux-tu envoyer ce text à [Sophie](recipient) ?
+    - T’es sur de vouloir envoyer ce msg à [Céline](recipient) ?
+    - T’envoi ce texto à [Léa](recipient).
+    - Prend ce msg et file le à [David](recipient).
+    - Envoie ce message à [Mon père](recipient), merci.
+    - Tu peu envoyer ce message à [Paul](recipient) ?
+    - Fais le parvenir à [Hugo](recipient) stp.
+    - Envoyez le sms à [Lucas](recipient), c’est urgent !
+    - T’envoie ce msg ou pas à [Julie](recipient) ?
+    - Tu peux transmettre ce message à [Damien](recipient).
+    - Peu envoyer ca à [Thomas](recipient) ?
+    - Si t’as le temps, envoie ca à [Alice](recipient).
+    - Envoie ca rapidement à [Louis](recipient).
+    - J’ai besoin d’envoyer ça à [Luc](recipient) ASAP.
+    - Peux tu envoyer ce msg à [Élise](recipient) ?
+    - Passe ce sms à [Sophie](recipient) en urgence.
+    - T’as envoyé ça à [Maxime](recipient) ?
+    - Tu peux transmettre ce texte à [Emilie](recipient).
+    - C’est bon, tu l’as envoyé à [Lola](recipient) ?
+    - Peux-tu envoyer ce text à [Sarah](recipient) ?
+    - Dis à [Marc](recipient) de m’attendre.
+    - Envoie vite ce msg à [Léa](recipient).
+    - Il faut envoyer ce sms à [Clara](recipient).
+    - Tu peut l’envoyer à [Jeanne](recipient), stp ?
+    - Passe ca à [David](recipient) dès que possible.
+    - Tu veux bien envoyer ce sms à [Sam](recipient) ?
+    - Transmets ce message à [Carla](recipient) quand t’as le temps.
+    - Envois moi ce sms à [Julie](recipient).
+    - Tu peux le passer à [Sarah](recipient) ?
+    - Envoie un message à [Luca](recipient), vite.
+    - Passe ce message à [Emilie](recipient), ça presse.
+    - Dis à [Lola](recipient) que j’arrive.
+    - Peux-tu transmettre ce sms à [Nicolas](recipient) ?
+    - Je peux le mettre à [Monique](recipient) ?
+    - C’est urgent, passe ce message à [Maxime](recipient).
+    - Fais-le rapidement pour [Alex](recipient), stp.
+    - Tu peux transmettre ce texte à [Karine](recipient) ?
+
+- intent: passer_appel
+  examples: |
+    - Appelle [Pierre](recipient) s'il te plaît.
+    - Tu peux appeler [Sophie](recipient) ?
+    - J’ai besoin que tu appelles [Julie](recipient).
+    - Appelle-moi dès que possible.
+    - Peux-tu appeler [Marc](recipient) pour moi ?
+    - Il faut que je parle à [Luc](recipient), peux-tu l’appeler ?
+    - Appelle [Léa](recipient), j’ai quelque chose à lui dire.
+    - Tu peux appeler [Jean](recipient) quand tu as un moment ?
+    - Appelle-moi, je t’expliquerai tout.
+    - Appelle-moi quand tu es libre.
+    - Appelle [Élise](recipient), elle doit savoir ça.
+    - Tu peux appeler [Alex](recipient) à ma place ?
+    - Passe-moi [Anna](recipient), je veux lui parler.
+    - Appelle [David](recipient), il a besoin de toi.
+    - Appelle [Nicolas](recipient) pour moi, il m’attend.
+    - Tu peux téléphoner à [Clara](recipient) ?
+    - Je veux qu’on m’appelle dans 5 minutes.
+    - Appelle [Victor](recipient) maintenant.
+    - Je vais appeler [Sarah](recipient), tu veux lui dire quelque chose ?
+    - Tu peux appeler [Thomas](recipient) pour moi ?
+    - Peux-tu appeler [Romain](recipient) à 15h ?
+    - Tu peux contacter [Louise](recipient) pour savoir si elle est là ?
+    - Appelle-moi quand tu as le temps.
+    - Appelle [Sophie](recipient) et demande-lui si elle arrive.
+    - Peux-tu appeler [Carla](recipient) ?
+    - Passe-moi [Eva](recipient) au téléphone.
+    - Est-ce que tu peux appeler [Maxime](recipient) ?
+    - Peux-tu appeler [Claire](recipient) ? C’est important.
+    - Appelle-moi dès que tu peux.
+    - Tu peux appeler [Julie](recipient) après ta réunion ?
+    - Appelle [Sébastien](recipient) et informe-le.
+    - Tu peux appeler [Emma](recipient) et lui dire que je viens ?
+    - Est-ce que tu peux contacter quelqu’un pour moi ?
+    - J’ai besoin que tu passes un appel.
+    - Tu peux joindre quelqu’un pour moi ?
+    - Je ne sais pas à qui tu dois appeler, mais appelle quelqu’un.
+    - Appelle une personne pour moi, peu importe qui.
+    - Est-ce que tu peux faire un appel pour moi ?
+    - Passe-moi quelqu’un au téléphone.
+    - Appelle un contact pour moi.
+    - Tu sais à qui appeler ? Fais-le.
+    - Tu peux passer un appel à un ami ?
+    - Appelle n’importe qui, ça presse.
+    - Tu peux contacter quelqu’un rapidement ?
+    - Fais un appel pour moi, je t’expliquerai après.
+    - Appelle un numéro au hasard, ce n’est pas grave.
+    - Je n’ai pas de préférence, appelle n'importe qui.
+    - Appelle quelqu’un de mon répertoire, c’est urgent.
+    - Tu m’appelles et je te dis qui appeler.
+    - Passe-moi un de mes contacts, s’il te plaît.
+    - Appelle une personne que tu connais dans mes contacts.
+    - J’ai besoin que tu contactes quelqu’un rapidement.
+    - Passe un appel à quelqu’un de la liste.
+    - Est-ce que tu peux appeler un de mes amis ?
+    - Fais un appel à un membre de ma famille.
+    - Tu sais bien qui appeler, fais-le.
+    - Appelle quelqu’un de mes contacts.
+    - Appelle quelqu’un que tu connais parmi mes amis.
+    - Tu peux contacter quelqu’un de ma part ?
+    - Appelle un ami, je te laisse choisir qui.
+    - Passe-moi un appel à quelqu’un qui peut m’aider.
+    - Tu peux joindre n'importe qui pour moi ?
+    - Appel [Pierre](recipient), vite !
+    - Peux tu appeler [Marie](recipient) ?
+    - Tu m’appel à 10h ?
+    - J’ai besoin de joindre [Nico](recipient), tu peux l’appel ?
+    - Passe moi [Emma](recipient) au tel, vite.
+    - Appelle moi dès que t'es dispo.
+    - T'as appelé [Charlotte](recipient) ?
+    - Appelle [Alexis](recipient), si t’as le temps.
+    - Je veux qu’on m’appel dans une demi-heure.
+    - Peux tu appeler [Sébastien](recipient) svp ?
+    - T’as pu appeler [Carla](recipient) ?
+    - Appelle moi dès que tu peux.
+    - Appelle [Tom](recipient), il faut qu’on parle.
+    - C’est urgent, appelle [Sophie](recipient).
+    - Appelle-moi avant 18h.
+    - T’as eu [Marie](recipient) au tel ?
+    - Appelle moi à la pause, je t’explique.
+    - J’ai oublié d’appeler [Léon](recipient), tu peux le faire ?
+    - Tu peux appeler [Max](recipient) pour moi ?
+    - Fais un appel à [Eva](recipient), il faut lui dire ça.
+    - Appelle-moi à 14h.
+    - Tu peux contacter [Louise](recipient) rapidement ?
+    - Appelle un taxi, j’ai besoin d’un trajet.
+    - Appelle-moi à 10h30, ça va ?
+    - J’appelle [Sophie](recipient), tu veux dire quelque chose ?
+    - Passe ce message à [Paul](recipient), il faut l'appeler rapidement.
+    - Fais un appel à [Léon](recipient), c’est important.
+    - J’appelle [Julien](recipient), tu veux aussi lui parler ?
+    - Appelle [Mélissa](recipient), tu veux lui parler ?
+    - Passe-moi un coup de fil à [Marc](recipient).
+    - T’appelles [Sam](recipient) après ?
+    - Je veux parler à [Lucas](recipient), fais-le.
+
+- intent: demander_renseignements_bancaires
+  examples: |
+    - Quel est mon solde bancaire ?
+    - Peux-tu me donner mon solde actuel ?
+    - J’aimerais connaître mon solde bancaire.
+    - Quel est le montant de mon dernier virement ?
+    - Peux-tu me dire combien il me reste sur mon compte ?
+    - Donne-moi le détail de mon compte bancaire.
+    - Quel est le solde de mon compte ?
+    - Peux-tu vérifier mon solde s'il te plaît ?
+    - J’aimerais savoir ce qui reste sur mon compte.
+    - Peux-tu me dire combien il me reste après mes paiements ?
+    - Quel est mon solde disponible ?
+    - Combien d'argent il me reste sur mon compte ?
+    - J’aimerais obtenir une mise à jour sur mon solde.
+    - Est-ce que tu peux me donner mon solde actuel ?
+    - Peux-tu me dire mon solde de compte ?
+    - Quel est le montant de ma dernière transaction ?
+    - J’ai besoin de savoir combien j’ai sur mon compte.
+    - Peux-tu m’informer de mon solde bancaire ?
+    - Donne-moi les informations de mon compte, s'il te plaît.
+    - J’ai besoin d’un résumé de mon solde bancaire.
+    - Est-ce que tu peux vérifier mon solde actuel ?
+    - Combien ai-je sur mon compte ?
+    - Quelle est la dernière transaction effectuée sur mon compte ?
+    - J’aimerais consulter mon solde actuel.
+    - Donne-moi mon solde de compte.
+    - Peux-tu m’informer sur le solde de mon compte ?
+    - Quel est mon solde après mes derniers retraits ?
+    - J’ai besoin de connaître mon solde total.
+    - Est-ce que mon solde a changé récemment ?
+    - J’ai fait des paiements récemment, peux-tu me dire mon solde ?
+    - Je veux savoir combien je peux encore dépenser.
+    - Peux-tu vérifier l’état de mon compte ?
+    - Est-ce que je peux savoir ce qui reste sur mon compte ?
+    - Je veux savoir combien il me reste après mes paiements.
+    - Tu peux me donner des infos sur mon compte ?
+    - J’ai besoin de savoir ce que j’ai sur mon compte.
+    - Est-ce que tu sais combien il me reste ?
+    - Peux-tu me donner un aperçu de mes finances ?
+    - J’aimerais connaître mes informations bancaires.
+    - Combien ai-je sur mon compte en ce moment ?
+    - Je veux connaître l’état de mon compte bancaire.
+    - Tu peux me dire ce qui reste sur mon compte ?
+    - Peux-tu vérifier ce que j’ai sur mon compte ?
+    - Est-ce que tu peux me faire une mise à jour de mon solde ?
+    - J’ai besoin de savoir où j’en suis financièrement.
+    - Combien de fonds me restent-ils ?
+    - Peux-tu vérifier mes transactions et mon solde ?
+    - Est-ce que tu peux me donner une estimation de mon solde ?
+    - J’aimerais savoir si j’ai assez d’argent pour cette dépense.
+    - Peux-tu me faire un point sur mon solde ?
+    - Quel est le solde de mon compte à la date d’aujourd’hui ?
+    - J’ai besoin d’une mise à jour de mon solde bancaire.
+    - Je voudrais avoir une idée de mon solde actuel.
+    - Peux-tu me dire combien il me reste après mes dernières actions ?
+    - Est-ce que mon solde a été mis à jour récemment ?
+    - Je veux savoir où j’en suis financièrement avec mon compte.
+    - Est-ce que tu peux vérifier les informations de mon compte ?
+    - J’aimerais savoir ce qui reste sur mon compte après mes paiements.
+    - Peux-tu vérifier le solde de mon compte pour moi ?
+    - J’ai un doute sur mon solde, peux-tu me confirmer ?
+    - Peux-tu m’aider à savoir combien j’ai sur mon compte ?
+    - J’aimerais vérifier mon solde bancaire.
+    - Combien g j sur mon compte ?
+    - Donne moi mon solde stp.
+    - Peux tu m dire si mon compte est ok ?
+    - Quel est mon solde de comte ?
+    - G bcp depensé, combien il me reste ?
+    - Peux tu vérifier le montant de mon solde ?
+    - Donne moi mon dernier solde bancaire.
+    - Combien j’ai sur le compte ?
+    - C’est combien sur mon compte ?
+    - Peux tu verifier combien g sur mon compte ?
+    - Tu peu me dire mon solde ?
+    - Je veux savoir combien je reste sur mon compte.
+    - Combien ai je sur mon compte?
+    - Verifie mon solde pls.
+    - Quel solde me reste-t-il ?
+    - Combien il me reste sur le compte ?
+    - Tu peux m’aider avec mon solde ?
+    - Est-ce que tu sais combien j’ai sur mon compte ?
+    - Je veux savoir mon solde de compte.
+    - Combien je peux encore depenser ?
+    - Mon solde il est comment ?
+    - Combien reste-il sur le compte ?
+    - Tu peux me dire mon solde stp ?
+    - Tu peux vérifier l'état de mon compte ?
+    - Combien j’ai sur mon compte bancaire ?
+    - Combien je peux retirer ?
+    - C’est quoi mon solde après mes retraits ?
+    - Je veux savoir le solde de mon compte tout de suite.
+    - Quel est le solde de mon compte bancaire stp ?
+    - Combien il me reste à la banque ?
+    - J’ai fait des virements, combien il me reste ?
+    - Donne moi mon solde bancaire s’il te plaît.
+
+
+
+- intent: bloquer_carte
+  examples: |
+    - Je souhaite bloquer ma carte bancaire.
+    - Peux-tu bloquer ma carte, elle a été perdue ?
+    - J’ai perdu ma carte, il faut la bloquer immédiatement.
+    - Je voudrais bloquer ma carte de crédit, elle a été volée.
+    - Bloque ma carte maintenant.
+    - J'ai perdu ma carte, il faut la désactiver.
+    - Peux-tu bloquer ma carte bancaire ?
+    - Je veux bloquer ma carte immédiatement.
+    - Ma carte a été volée, peux-tu la bloquer ?
+    - J’aimerais faire bloquer ma carte bancaire.
+    - Pouvez-vous bloquer ma carte de crédit ?
+    - J’ai perdu ma carte bancaire, je veux la bloquer.
+    - Bloque ma carte immédiatement s'il te plaît.
+    - Je demande à bloquer ma carte bancaire.
+    - Ma carte est volée, merci de la bloquer.
+    - Bloque ma carte dès maintenant.
+    - Est-il possible de bloquer ma carte ?
+    - J’aimerais bloquer ma carte de débit, elle a été perdue.
+    - Ma carte a été utilisée sans autorisation, bloquez-la.
+    - J’ai perdu ma carte, je souhaite qu'elle soit bloquée.
+    - Peux-tu procéder au blocage de ma carte bancaire ?
+    - Ma carte a été volée, peux-tu la désactiver ?
+    - Je souhaite bloquer ma carte maintenant.
+    - Ma carte a été endommagée, je veux la bloquer.
+    - Je veux demander le blocage de ma carte.
+    - Bloque ma carte, je pense qu’elle est volée.
+    - Je veux signaler que ma carte a été perdue et la bloquer.
+    - Bloque ma carte rapidement, elle est peut-être volée.
+    - Il faut bloquer ma carte immédiatement.
+    - Ma carte est introuvable, bloque-la pour moi.
+    - Est-ce que tu peux m'aider à bloquer ma carte ?
+    - J'ai des soucis avec ma carte, il faut que tu la bloques.
+    - Je crois que ma carte a été volée, peux-tu la désactiver ?
+    - Peux-tu m'assister pour bloquer ma carte ?
+    - Ma carte semble être perdue, tu peux la bloquer ?
+    - Mon compte est peut-être utilisé frauduleusement, bloque ma carte.
+    - Je pense que ma carte est compromise, est-ce possible de la bloquer ?
+    - Ma carte n’est plus dans mon portefeuille, peux-tu la bloquer ?
+    - Peut-on annuler ou bloquer une carte ?
+    - Je voudrais que ma carte soit bloquée, c’est possible ?
+    - Il faut que je bloque ma carte, tu peux m'aider ?
+    - Est-il possible de stopper l'utilisation de ma carte ?
+    - J’ai un doute sur ma carte, est-ce que tu peux la bloquer ?
+    - Je crois que quelqu’un utilise ma carte sans autorisation.
+    - Est-ce possible de faire un blocage temporaire de ma carte ?
+    - Ma carte a été utilisée frauduleusement, il faut la bloquer.
+    - Je crois qu'on a utilisé ma carte sans ma permission, bloquez-la.
+    - Ma carte est peut-être volée, faut-il la bloquer ?
+    - Je veux empêcher l'utilisation de ma carte si elle a été volée.
+    - Est-ce que tu peux arrêter l'utilisation de ma carte ?
+    - Je pense que ma carte est compromise, peux-tu la bloquer ?
+    - J’aimerais prendre des mesures pour bloquer ma carte.
+    - Comment bloquer ma carte si elle est perdue ?
+    - Que faire si ma carte est volée et que je veux la bloquer ?
+    - Je crois que ma carte a été volée, est-ce possible de la bloquer ?
+    - Il faut que je bloque ma carte, j’ai un doute.
+    - Que faire si ma carte est utilisée sans mon autorisation ?
+    - Est-ce que tu peux bloquer ma carte dès que possible ?
+    - Je veux empêcher que ma carte soit utilisée, bloque-la.
+    - Bloque ma carte elle est perdue.
+    - J’ai perdu ma carte bancaire, bloque là.
+    - Tu peu bloquer ma carte svp.
+    - Carte volée, bloque la plz.
+    - Peut tu bloquer ma carte ?
+    - Je veut bloquer ma carte de suite.
+    - J’ai oublié ma carte, bloque là vite.
+    - Bloque ma carte c’est urgent.
+    - G perdu ma carte, bloque la.
+    - Faut bloquer ma carte vite fait.
+    - J’ai besoin de bloquer ma carte stp.
+    - Ma carte volée, bloque la.
+    - Bloque ma carte c’est important.
+    - G pas retrouvé ma carte, bloque-la stp.
+    - Ma carte a disparu, faut la bloquer.
+    - Bloque ma carte c’est urgent.
+    - Est-ce possible de bloquer ma carte tout de suite ?
+    - Carte volée, bloque la.
+    - Je pense ma carte volée, bloque la.
+    - Blocage de carte svp.
+    - Bloque ma carte maintenant.
+    - J’ai perdu ma carte bancaire vite faut la bloquer.
+    - Je crois que ma carte est volée, bloquez la vite.
+    - J’ai un doute sur ma carte, bloque la.
+    - G perdu ma carte, bloque la vite.
+    - Je veux bloquer ma carte stp.
+    - Bloque ma carte maintenant vite.
+    - Peut tu désactiver ma carte ?
+    - Carte volée faut bloquer.
+    - Je croit que quelqu’un utilise ma carte bloque la.
+    - Ma carte a disparu, bloqué là.
+
+
+
+- intent: bienvenu
+  examples: |
+    - Bonjour !
+    - Salut comment ça va ?
+    - Bonjour, j'espère que tu vas bien.
+    - Salut, comment tu vas ?
+    - Bonsoir !
+    - Salut, comment tu te sens aujourd'hui ?
+    - Bonjour, je suis content de te voir.
+    - Salut, ça fait longtemps !
+    - Salut à tous !
+    - Bonjour, j’espère que ta journée se passe bien.
+    - Salut, quoi de neuf ?
+    - Salut, comment ça va depuis la dernière fois ?
+    - Bonjour, comment tu vas ?
+    - Salut, tu vas bien ?
+    - Bonsoir tout le monde !
+    - Salut, ça va ?
+    - Bonjour, tout va bien ?
+    - Salut, ça roule ?
+    - Bonjour, ça va bien aujourd'hui ?
+    - Salut, content de te voir ici !
+    - Bonjour, comment tu te sens ?
+    - Salut, prêt pour la journée ?
+    - Bonjour, je suis heureux de te parler.
+    - Salut, tout va bien ?
+    - Salut, comment ça se passe ?
+    - Bonsoir, comment tu vas ?
+    - Salut, tu as passé une bonne journée ?
+    - Bonjour, ça va bien ?
+    - Salut, ça va mieux aujourd'hui ?
+    - Bonjour, content de te retrouver !
+    - Salut, comment s'est passée ta journée ?
+    - Bonsoir, tu vas bien ?
+    - Salut, comment va ta journée ?
+    - Bonjour, comment tu vas aujourd'hui ?
+    - Salut, j’espère que tout va bien.
+    - Salut, comment va la vie ?
+    - Bonjour, ça va bien de ton côté ?
+    - Salut, quoi de neuf chez toi ?
+    - Bonsoir, tout se passe bien ?
+    - Bonjour, est-ce que tout va bien ?
+    - Salut, c’est un plaisir de te voir.
+    - Bonjour, tu vas bien ?
+    - Salut, comment se passe ta journée ?
+    - Bonjour, heureux de te voir aujourd’hui.
+    - Salut, tu as passé une bonne semaine ?
+    - Bonjour, c’est super de te parler.
+    - Salut, comment ça va de ton côté ?
+    - Bonjour, ça va bien ?
+    - Salut, tu as l’air en forme !
+    - Salut, ça fait plaisir de te voir !
+    - Bonjour, comment tu vas depuis la dernière fois ?
+    - Salut, j'espère que tout va bien.
+    - Bonjour, ça fait plaisir de discuter avec toi.
+    - Salut, comment tu te sens aujourd'hui ?
+    - Bonsoir, comment vas-tu ?
+    - Salut, tu vas bien aujourd’hui ?
+    - Bonjour, content de te parler à nouveau.
+    - Salut, comment ça roule ?
+    - Bonjour, ravi de te rencontrer.
+    - Salut, comment ça va aujourd’hui ?
+    - Bonjour, tout se passe bien ?
+    - Salut, tu es prêt pour la journée ?
+    - Bonjour, tout va bien chez toi ?
+    - Salut, tu vas bien cette semaine ?
+    - Hé, ça va ?
+    - Salut, ça va bien ?
+    - Comment vas-tu ?
+    - Bonsoir, ça roule ?
+    - Salut, tu vas bien aujourd'hui ?
+    - Comment tu te sens ?
+    - Salut, t'as passé une bonne journée ?
+    - Salut, comment ça va ? Un petit message ?
+    - C’est quoi de neuf ?
+    - Salut, t’es là ?
+    - Comment ça va depuis tout à l'heure ?
+    - Salut, tu veux discuter ?
+    - Ça va ?
+    - Salut, t'es prêt à commencer ?
+    - Ça roule ?
+    - Salut, tu as passé une bonne journée ?
+    - Comment tu vas aujourd'hui ?
+    - Salut, qu'est-ce qu'il y a de nouveau ?
+    - Bonjour, comment tu te sens aujourd’hui ?
+    - Ça va depuis tout à l'heure ?
+    - Salut, t'as des nouvelles ?
+    - Comment tu vas, dis-moi !
+    - Salut, ça roule toujours ?
+    - Salut, t’as bien dormi ?
+    - T’as passé une bonne journée ?
+    - Salut, qu'est-ce que tu fais ?
+    - Salut, c’est quoi les nouvelles ?
+    - Hé, comment tu vas ?
+    - Salut, tout va bien ?
+    - Tu vas bien ?
+    - Salut, tu vas faire quoi aujourd'hui ?
+    - Quoi de neuf ?
+    - Comment ça va, tout roule ?
+    - Salut, tu fais quoi de beau ?
+    - Salut, tu as des plans ?
+    - Salut, t’as du temps pour discuter ?
+    - Salut, ça va bien ou pas ?
+    - Salut, t’as l’air fatigué, ça va ?
+    - Ça va mieux aujourd’hui ?
+    - Salut, tu vas bien ou pas trop ?
+    - Bonjour, tu veux parler ?
+    - Salut, des nouvelles ?
+    - Salut, tout va bien aujourd’hui ?
+    - Salut, comment tu vas en ce moment ?
+    - Salut, tu veux qu’on discute un peu ?
+    - Salut, ça fait longtemps, comment tu vas ?
+    - Salut, tu vas être dispo pour discuter ?
+    - Salut, t'as bien mangé ?
+    - Salut, t'es en forme ?
+    - Salut, ça roule ?
+    - Hé, tout va bien ?
+    - Salut, comment va ta journée ?
+    - Salut, t’as une minute ?
+    - Salut, tu viens de te réveiller ?
+    - Salut, tout va bien de ton côté ?
+    - Salut, t’as passé une bonne nuit ?
+    - Salut, comment tu vas en ce moment ?
+    - Salut, t'as un peu de temps ?
+    - Salut, tu fais quoi ?
+    - Salut, ça fait plaisir de te parler !
+    - Comment ça va, prêt pour ce soir ?
+    - Salut, tu vas t’en sortir ?
+    - Salut, tu es libre ?
+    - Salu, comment ca va ?
+    - Bjr, ca va bien ?
+    - Saluuuut comment tu va ?
+    - Bonj, comment ça va ?
+    - Salut, ca roule ?
+    - Hey, ça va ?
+    - Cmt tu vas ?
+    - Salut, ça roule ou pas ?
+    - Slt, ça va ?
+    - Bjr, ca va bien ?
+    - Coucou, tout va bien ?
+    - Salut toi, comment tu va ?
+    - Salut comment ça va ?
+    - Slt, t’es en forme ?
+    - Bjr, ça va depuis ce matin ?
+    - Salut, bien ou pas ?
+    - Hey, t'es là ?
+    - Salut, tout va bien ?
+    - Salut toi, comment tu vas ?
+    - Salut comment ça roule ?
+    - Salut, tout va ?
+    - Hey, ca va ?
+    - Slt, tu vas bien ?
+    - Salut, tu va bien ?
+    - Salut, tu fais quoi ?
+    - Cmt ca va ?
+    - Saluut, ca va ?
+    - Salut, ca va ou quoi ?
+    - Slt, tout va ?
+    - Hey salut, tu vas bien ?
+    - Salut, tout va bien de ton côté ?
+    - Salut, quoi de neuf ?
+    - Salut, tu va bien ?
+    - Cmt ça va de ton côté ?
+    - Hey salut, bien ou pas ?
+    - Salut, tout ok ?
+    - Bjr, tu vas bien ?
+    - Salut, ça va ou pas ?
+    - Slt, tu vas faire quoi aujourd’hui ?
+    - Slt, t’as du temps ?
+    - Salut, tout bien ?
+    - Salut, ça roule ?
+    - Salut, t’es dispo ?
+    - Salut, ça va cette fois ?
+    - Cmt va ta journée ?
+    - Slt, tu fais quoi ?
+    - Salut, tout va ou quoi ?
+    - Salut, ça va ce matin ?
+    - Salut, ça va t’inquiète !
+    - Slt, t’as passé une bonne journée ?
+    - Salut, tu veux discuter ?
+    - Salut, tu veux qu’on parle un peu ?
+    - Salut, t’as des nouvelles ?
+    - Slt, comment va la famille ?
+    - Salut, ça va ou pas ?
+    - Salut, tu es dispo ?
+    - Hey, t’es bien là ?
+    - Salut, t’as eu une bonne journée ?
+    - Slt, ca va bien cette semaine ?
+  
+
+
+- intent: aurevoir
+  examples: |
+    - Au revoir !
+    - À bientôt !
+    - À la prochaine !
+    - Bonne journée !
+    - Bonne soirée !
+    - Salut, à plus tard !
+    - À plus !
+    - À demain !
+    - À tout à l'heure !
+    - Passe une bonne journée !
+    - À la prochaine fois !
+    - On se voit bientôt !
+    - À bientôt, prends soin de toi !
+    - Salut, à bientôt !
+    - À tout de suite !
+    - À plus tard !
+    - Bonne continuation !
+    - On se revoit très bientôt !
+    - Ciao !
+    - À plus tard, prends soin de toi !
+    - À la prochaine, bon courage !
+    - À plus, à très vite !
+    - À tout à l'heure, prends soin de toi !
+    - Merci et à bientôt !
+    - Salut, à la prochaine !
+    - À plus tard, bonne soirée !
+    - Bonne journée, à bientôt !
+    - On se voit demain !
+    - Passe une bonne soirée !
+    - À bientôt, bon courage !
+    - C’est à la prochaine !
+    - À très vite !
+    - À plus, à la prochaine !
+    - À tout à l’heure, bon courage !
+    - Merci, à bientôt !
+    - À bientôt, à très vite !
+    - Passe une excellente journée !
+    - Merci et à la prochaine !
+    - À tout de suite !
+    - À très bientôt !
+    - Salut, à plus !
+    - À plus, à demain !
+    - À la prochaine, bonsoir !
+    - À la prochaine fois, bonjour !
+    - À tout à l'heure, à plus !
+    - À demain, prends soin de toi !
+    - Bonne soirée, à bientôt !
+    - À plus tard, à demain !
+    - À très vite, prends soin de toi !
+    - À demain, bonne soirée !
+    - À tout de suite, à plus !
+    - Salut, à demain !
+    - À plus, à tout à l'heure !
+    - Bonne journée, à tout à l'heure !
+    - Salut, passe une bonne journée !
+    - À plus tard, bonne journée !
+    - Ciao, à très vite !
+    - À tout à l'heure, bonne soirée !
+    - À demain, à plus !
+    - Salut, passe une excellente journée !
+    - À plus, à tout de suite !
+    - À très bientôt, bonne soirée !
+    - À demain, à tout à l'heure !
+    - À tout de suite, à bientôt !
+    - Salut, à très vite !
+    - À tout à l'heure, à demain !
+    - Bonne continuation, à bientôt !
+    - À plus tard, à très vite !
+    - À bientôt, à plus !
+    - On se voit bientôt !
+    - À plus tard !
+    - À demain, je pense !
+    - Salut, on se voit bientôt !
+    - On se reparle bientôt !
+    - À la prochaine, peut-être !
+    - À plus, on se revoit !
+    - À bientôt, je l'espère !
+    - Salut, à un de ces jours !
+    - C'est à plus tard !
+    - À plus tard, je suppose !
+    - Salut, à la prochaine fois !
+    - À plus, peut-être ?
+    - À tout à l'heure, qui sait !
+    - C’est pas la dernière fois !
+    - À plus, je reviendrai !
+    - À bientôt, si tu veux !
+    - À plus, on verra bien !
+    - À tout à l'heure, on espère !
+    - À plus, à bientôt si tout va bien !
+    - On se revoit très vite, j’espère !
+    - À plus, je suis sûr qu'on se reverra !
+    - À bientôt, mais on ne sait jamais !
+    - À la prochaine, qui sait !
+    - Salut, à plus, on verra !
+    - À bientôt, à condition qu’on se croise !
+    - À tout à l'heure, enfin je crois !
+    - Salut, peut-être à plus !
+    - À demain, si on peut !
+    - À bientôt, on va essayer !
+    - À plus, j'espère !
+    - À la prochaine, à moins que…
+    - À demain, peut-être…
+    - Salut, à plus, mais pas sûr !
+    - À tout de suite, ou pas…
+    - À bientôt, on verra bien !
+    - Salut, à un moment donné !
+    - À plus, peut-être demain !
+    - À bientôt, à condition que…
+    - À plus, mais je ne suis pas sûr !
+    - À demain, à voir !
+    - Salut, à la prochaine fois !
+    - À tout de suite, mais pas sûr !
+    - À plus tard, à revoir !
+    - À bientôt, peut-être plus tard !
+    - À tout à l'heure, ou pas !
+    - À plus, je l'espère !
+    - À tout de suite, mais rien n’est sûr !
+    - Salut, à la prochaine si ça colle !
+    - À plus, peut-être dans un autre moment !
+    - À bientôt, on verra si tout va bien !
+    - À plus tard, mais j'espère !
+    - À tout à l'heure, si je suis dispo !
+    - À la prochaine, on verra !
+    - À demain, ou peut-être pas !
+    - À plus, j'espère que oui !
+    - À bientôt, si tout va bien !
+    - Salut, à plus tard, si possible !
+    - À plus, si tu veux bien !
+    - À plus tard, je ne sais pas !
+    - Salut, à plus, mais peut-être pas !
+    - À la prochaine, à moins qu’on se croise avant !
+    - A plus tard !
+    - A biento !
+    - A demain, jespere !
+    - Salut, a plus !
+    - Ciao, a plus !
+    - Salut, c a plus !
+    - A plus, tcho !
+    - A bientot, bisous !
+    - A la prochaine, tchao !
+    - Salut, à plus, bonne journée !
+    - Salut, à bientot !
+    - Ciao, on se revoit !
+    - A bientot, tcho !
+    - A plus, on se voit !
+    - A plus tard, jespere !
+    - Ciao, bonne soirée !
+    - A demain, ou peut être !
+    - A plus, a plus tard !
+    - A tout de suite !
+    - A plus tard, bisou !
+    - A plus, bonne nuit !
+    - A bientot, on se revoit !
+    - Salut, ca va ? A plus !
+    - A demain, à plus !
+    - Ciao, t’es sur à plus !
+    - Salut, à plus tard !
+    - A plus, à ce soir !
+    - A plus, on verra !
+    - A demain, j'espère !
+    - A plus tard, bisous !
+    - A plus, et merci !
+    - Salut, je vais y aller, a plus !
+    - Salut, à demain, peut-être !
+    - A tout de suite, j’espère !
+    - A plus, prends soin de toi !
+    - A plus, a bientot !
+    - Ciao, tu t’en vas déjà !
+    - A plus, bonne chance !
+    - Salut, ciao à plus !
+    - A plus, on se revoit bientôt !
+    - A plus tard, a bientot !
+    - A demain, j’y vais !
+    - A plus, a demain !
+    - A plus, bonne continuation !
+    - Ciao, a demain, à plus !
+    - A bientot, je reviendrai !
+    - A plus tard, bisous !
+    - A la prochaine, je crois !
+    - Salut, à demain peut-être !
+    - A plus, ca fait plaisir !
+    - A bientot, bon voyage !
+    - A plus, je reviendrai !
+    - A demain, bonne nuit !
+    - A plus, à tout de suite !
+    - Salut, a bientot !
+    - A plus, tout roule !
+    - A plus, bonne soirée !
+    - A demain, à plus !
+    - A plus tard, à bientôt !
+    - A demain, à plus !
+    - A plus tard, a bientot !
+    - Ciao, à demain !
+    - stop
+    - adios

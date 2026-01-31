@@ -1,0 +1,62 @@
+version: "3.1"
+
+intents:
+  - consulter_solde
+  - effectuer_virement
+  - envoyer_message
+  - passer_appel
+  - demander_renseignements_bancaires
+  - bloquer_carte
+  - bienvenu
+  - aurevoir
+
+responses:
+  utter_consulter_solde:
+  - text: "Voici le solde de votre compte"
+
+  utter_effectuer_virement:
+  - text: "Le virement a été effectué avec succès."
+
+  utter_envoyer_message:
+  - text: "Votre message a bien été envoyé."
+
+  utter_passer_appel:
+  - text: "Votre appel a été lancé."
+
+  utter_demander_renseignements_bancaires:
+  - text: "Voici les renseignements bancaires demandés."
+
+  utter_bloquer_carte:
+  - text: "Votre carte a été bloquée."
+  
+  utter_bienvenu:
+  - text: "Salut bienvenu."
+  
+  utter_aurevoir:
+  - text: "okay bye!!!."
+
+  utter_default:
+  - text: "Désolé, je n'ai pas compris. Pouvez-vous reformuler ?"
+
+slots:
+  recipient:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: recipient
+      
+
+# actions:
+#   - action_consulter_solde
+#   - action_effectuer_virement
+#   - action_envoyer_message
+#   - action_passer_appel
+#   - action_demander_renseignements_bancaires
+#   - action_bloquer_carte
+#   - action_bienvenu
+#   - action_aurevoir
+#   - action_default_fallback
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,13 +1,13 @@
 # Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
 
 # dependencies
-/ivr-frontend/node_modules/
+ivr-frontend/node_modules/
 
 # Expo
-/ivr-frontend/.expo/
-/ivr-frontend/dist/
-/ivr-frontend/web-build/
-/ivr-frontend/expo-env.d.ts
+ivr-frontend/.expo/
+ivr-frontend/dist/
+ivr-frontend/web-build/
+ivr-frontend/expo-env.d.ts
 
 # Native
 *.orig.*
@@ -76,3 +76,14 @@ ivr-backend/.env
 
 # Dossiers de tests 
 ivr-backend/nosetests.xml
+
+# Rasa cache & modèles temporaires
+ivr-backend/rasa/.rasa/cache/
+*.tar.gz
+*.db
+*.pkl
+
+# Assets générés
+*.wav
+*.mp3
+*.sqlite
