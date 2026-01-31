@@ -1,0 +1,78 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+/ivr-frontend/node_modules/
+
+# Expo
+/ivr-frontend/.expo/
+/ivr-frontend/dist/
+/ivr-frontend/web-build/
+/ivr-frontend/expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+ivr-frontend/.metro-health-check*
+
+# debug
+ivr-frontend/npm-debug.*
+ivr-frontend/yarn-debug.*
+ivr-frontend/yarn-error.*
+
+# macOS
+ivr-frontend.DS_Store
+*.pem
+
+# local env files
+ivr-frontend/.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# Fichiers de sortie et de build
+ivr-frontend/dist
+ivr-frontend/build
+
+# Android (dossiers et fichiers générés pour la plateforme Android)
+ivr-frontend/android/
+
+# Ignorez l'environnement virtuel
+SVI/
+
+# Fichiers Python compilés
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dossiers de cache ou fichiers générés
+ivr-backend/.mypy_cache/
+ivr-backend/.pytest_cache/
+ivr-backend/.coverage
+ivr-backend/.nox/
+ivr-backend/.tox/
+*.egg-info/
+ivr-backend/dist/
+ivr-backend/build/
+
+# Dossiers spécifiques à Rasa
+ivr-backend/logs/
+ivr-backend/models/
+
+# Fichiers IDE et éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers sensibles
+ivr-backend/.env
+
+# Dossiers de tests 
+ivr-backend/nosetests.xml
